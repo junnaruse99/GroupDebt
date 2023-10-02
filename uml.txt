@@ -1,0 +1,45 @@
+Session ||--|{ Persona
+Persona ||--o{ Debt
+DebtTag }|--|| Debt
+Tag ||--|{ DebtTag
+
+class Session
+{
+  Guid Id
+  String Name
+  DateTime CreatedOn
+}
+
+class Persona
+{
+  Guid Id
+  String Name
+  String? LastName
+  bool IsDeleted
+  Guid SessionId
+}
+
+class Debt
+{
+  Guid Id
+  Int Amount
+  Guid CreditorId
+  Guid DebtorId
+  DateTime CreatedOn
+  Bool IsPaid
+  String? Description
+  Bool IsDeleted
+}
+
+class Tag
+{
+  Guid Id
+  String Text
+  String Color
+}
+
+class DebtTag
+{
+  Guid DebtId
+  Guid TagId
+}
