@@ -1,0 +1,21 @@
+# Ignore node_modules directory
+/front/node_modules/
+
+# Ignore the .next build directory
+/front/.next/
+
+# Ignore the .env.local file (for storing environment variables)
+/front/.env.local
+
+# Ignore npm-related files and directories
+/front/package-lock.json
+/front/npm-debug.log
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore .env files (usually used for environment variables)
+.env
+
+# Ignore log files and other generated files
+*.log
